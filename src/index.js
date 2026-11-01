@@ -4,8 +4,8 @@ const helmet = require('helmet');
 const logger = require('./config/logger');
 const { config } = require('./config');
 
-const {reqLogger} = require('./middlewares/req.middleware');
-const {corsMiddleware} = require('./middlewares/cors.middleware')
+const reqLogger = require('./middlewares/req.middleware');
+const corsMiddleware = require('./middlewares/cors.middleware')
 const errorHandler = require('./middlewares/error.middleware')
 const app = express()
 
